@@ -10,15 +10,15 @@
 #include "Role.h"
 
 #define ABSTRACT(...) virtual __VA_ARGS__ = 0
-typedef int Status;
+enum Status {
+	CONTINUE,
+	SUCCESS,
+	UNKNOWN_EVENT
+};
 
 
 #define ROLE(name) get##name()
 #define USE_ROLE(name) virtual name& get##name() = 0;
-
-#define SUCCESS 1
-#define CONTINUE 0
-#define UNKNOWN_EVENT 2
 
 #define DEF_ROLE(role) class role : public Role<role>
 
