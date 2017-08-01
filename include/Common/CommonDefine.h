@@ -10,10 +10,12 @@
 #include "Role.h"
 
 #define ABSTRACT(...) virtual __VA_ARGS__ = 0
+#define OVERRIDE virtual
 enum Status {
 	CONTINUE,
 	SUCCESS,
-	UNKNOWN_EVENT
+	UNKNOWN_EVENT,
+	DUMMY
 };
 
 
