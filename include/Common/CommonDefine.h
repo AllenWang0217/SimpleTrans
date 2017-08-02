@@ -14,8 +14,7 @@
 enum Status {
 	CONTINUE,
 	SUCCESS,
-	UNKNOWN_EVENT,
-	DUMMY
+	UNKNOWN_EVENT
 };
 
 
