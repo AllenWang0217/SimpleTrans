@@ -7,9 +7,9 @@
 
 #ifndef USERACTION_H_
 #define USERACTION_H_
-#include "../Action/Event.h"
-#include "../Action/Action.h"
-#include "../Action/SyncAction.h"
+#include "../include/Action/Event.h"
+#include "../include/Action/Action.h"
+#include "../include/Action/SyncAction.h"
 
 #define EV_EVENT_1 1
 #define EV_EVENT_2 2
